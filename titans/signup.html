@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Isometra&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+            rel="stylesheet">
+
+        <title>Titans</title>
+
+        <style>
+        body {
+    background-image: url("images/wb2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    margin: 0;
+    min-height: 100vh;
+}
+    </style>
+    </head>
+    <body>
+        <!-- Header Navigation -->
+        <header>
+            <div class="logo">WEARABLES</div>
+            <ul id="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <!-- <li><a href="wish-list.html">🩷Wishlist</a></li> -->
+                <!-- <li><button id="cart-toggle-btn">Cart</button></li> -->
+                <li><a href="about.html">About Us</a></li>
+                <li><button id="sign-btn"
+                        onclick="window.open('login.html', '_self')">Login</button></li>
+                <li><button id="sign-btn"
+                        onclick="window.open('sign-up.html', '_self')">Sign
+                        Up</button></li>
+            </ul>
+        </header>
+
+        <div class="sign-up-card">
+            <h2>Create Account</h2>
+
+            <form>
+                <table>
+                    <tr>
+                        <th><label for="c-name">Name:</label></th>
+                        <th><label for="c-email">Email:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="c-name" class="sign-up-input"
+                                placeholder="Enter Your Full Name" required>
+                        </td>
+                        <td>
+                            <input type="email" id="c-email"
+                                class="sign-up-input"
+                                placeholder="Enter Your Email" required>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <label for="c-number">Mobile Number:</label>
+                <input type="number" id="c-number"
+                                class="sign-up-input"
+                                placeholder="Enter Your Mobile Number"
+                                pattern="[0-9]{10}" required>
+                <label for="c-password">Create Password:</label>
+                <input type="password" id="c-password"
+                                class="sign-up-input"
+                                placeholder="Enter Password" required>
+                <label for="cconfirm-password">Confirm Password:</label>
+                <input type="password" id="cconfirm-password"
+                                class="sign-up-input"
+                                placeholder="Confirm Password" required>
+                <button type="submit" id="sign-up-button">
+                    Sign Up
+                </button>
+                
+                <p id="user-account">Already Have An Account?<a href="login.html">Click Here</a></p>
+            </form>
+        </div>
+
+        <div class="quick-links">
+            <table>
+                <tr>
+                    <th><h3>Address : </h3></th>
+                    <th><h3>Quick Links</h3></th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><p style="width: 500px;">
+                                    <p>Titan Wearables Pvt.Ltd.Mumbai </p>
+                                    <p>Mumbai - 400 001</p>
+                                    <p>Phone No : +91 xxxxxx8787</p>
+                                </p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Create Account</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <div class="mob-footer">
+                <p class="footer">
+                    Copyright © Titan Wearables Pvt. Ltd. 1988-2026
+                    |<a
+                        href="https://www.itvedant.com/policy/terms-conditions">Terms</a>
+                    |
+                    <a
+                        href="https://www.itvedant.com/policy/privacy-policy">Privacy</a>
+                    |
+                    <a
+                        href="https://www.itvedant.com/policy/refund-policy">Refund</a>
+                </p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
